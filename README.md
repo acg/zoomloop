@@ -18,7 +18,7 @@ Example: [The Land-o-Lakes Butter Box](https://vimeo.com/56182160/)
 2. Find the fixed point `(ox,oy)` of the self-tiling in rectangular coordinates, where `(0,0)` is the top left and `(width,height)` is the lower right.
 3. Find the scaling factor of the self-tiling, which is a floating point number in the interval `[0,1]`.
 4. Run `make video OX=$ox OY=$oy SCALE=$scale`.
-5. Optionally, loop the output video `out.mp4` with [this ffmpeg 1.1 video concatenation trick](http://ffmpeg.org/trac/ffmpeg/wiki/How%20to%20concatenate%20(join,%20merge)%20media%20files).
+5. Optionally, loop the output video `out.mp4` with [this ffmpeg 1.1 video concatenation trick](http://ffmpeg.org/trac/ffmpeg/wiki/How%20to%20concatenate%20%28join,%20merge%29%20media%20files).
 
 ## Known Issues ##
 
