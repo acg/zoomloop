@@ -1,10 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>    // exit(3)
-#include <sys/types.h> // stat(2)
-#include <sys/stat.h>  // stat(2)
-#include <unistd.h>    // stat(2)
-#include <time.h>      // strftime(3), localtime_r(3)
-#include <X11/Xlib.h>
 #include <Imlib2.h>
 
 
