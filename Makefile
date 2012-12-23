@@ -3,12 +3,12 @@ SOURCES = $(TARGET).c
 OBJECTS = ${SOURCES:%.c=%.o}
 LIBS = -lImlib2
 
-IMAGE = input.img
-IMAGE_CX = $(shell gm identify -format "%w" ${IMAGE})
-IMAGE_CY = $(shell gm identify -format "%h" ${IMAGE})
-OX = 783
-OY = 417
-SCALE = 0.078544
+IMAGE ?= input.img
+IMAGE_CX ?= $(shell identify -format "%w" ${IMAGE})
+IMAGE_CY ?= $(shell identify -format "%h" ${IMAGE})
+OX ?= $(shell echo ${IMAGE_CX}/2 | bc )
+OY ?= $(shell echo ${IMAGE_CY}/2 | bc )
+SCALE ?= 0.25
 
 CFLAGS += -O3
 CFLAGS += -std=c99
